@@ -1,0 +1,27 @@
+.navbar{
+  margin-bottom: 0;
+  border-radius: 0;
+}
+.jumbotron{
+  background: url("../photos/main-title.jpg")no-repeat center center;
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+}
+.col-md-12 h2{
+  border-bottom: 1px inset #000000;
+}
+.btn-md{
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background-color: #2d2d2d;
+  border: none;
+}
+.btn-info:hover{
+  background-color: #908282;
+  border: none;
+}
+.btn-info:focus{
+  background-color: #2d2d2d;
+  border: none;
+}
