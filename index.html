@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
+  <!-- head section: imports necessary javascript and css files. -->
   <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -10,6 +12,7 @@
   </head>
 
   <body>
+    <!-- creates the navbar in its own container -->
     <nav class="navbar navbar-inverse">
       <div class="container">
         <div class="navbar-header">
@@ -21,6 +24,7 @@
           </button>
         </div>
 
+        <!-- navbar dropdown, assigning each item to open its corresponding modal -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
               <li class="dropdown">
@@ -35,13 +39,14 @@
                   <li><a href="#" data-toggle="modal" data-target="#prj6Modal">RSS Testing</a></li>
                 </ul>
               </li>
-              <li><a href="https://github.com/slkcoin/projects" target="_blank">GitHub</a></li>
+              <li><a href="https://github.com/slkcoin" target="_blank">GitHub</a></li>
               <li><a href="">About</a></li>
             </ul>
         </div>
       </div>
     </nav>
 
+    <!-- used a jumbotron to make my my name and title really stand out -->
     <header class="jumbotron">
       <div class="container">
         <div class="row">
@@ -51,32 +56,40 @@
       </div>
     </header>
 
-    <section class="container">
+    <!-- This is the primary container used for the bulk of the site content.
+    each part is broken down into rows and columns to fit the requirements when
+    using bootstrap.-->
+    <main class="container">
 
-      <section class="row">
-        <article class="col-md-12">
+      <div class="row">
+        <!-- TODO: Replace filler content with introduction -->
+        <div class="col-md-12">
           <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-        </article>
-      </section>
+        </div>
+      </div>
 
-      <section class="row">
-        <section class="col-md-12">
+      <div class="row">
+        <div class="col-md-12">
           <h2 id="prjheading">Front-End Development</h2>
-        </section>
-      </section>
+        </div>
+      </div>
 
-      <section class="row">
+      <!-- Primary Row #1 -->
+      <div class="row">
 
-        <section class="col-md-4">
+        <!-- Each project creates a javascript modal that gives more information
+        about the assignment. Filler content is there for now to show implementation. -->
+        <div class="col-md-4">
           <img src="photos/prj1.jpg" alt="prj1" class="image-responsive center-block">
-          <button type="button" class="btn btn-info btn-md center-block" data-toggle="modal" data-target="#prj1Modal" id="btn-modal">Portfolio</button>
+          <button type="button" class="btn btn-info btn-md center-block" data-toggle="modal" data-target="#prj1Modal">Portfolio</button>
           <div id="prj1Modal" class="modal fade" role="dialog">
             <div class="modal-dialog">
               <section class="modal-content">
-                <header class="modal-header">
+                <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
                   <h4 class="modal-title">Project #1: Portfolio Site</h4>
-                </header>
+                </div>
+              <!-- TODO: replace filler content with project outline -->
               <article class="modal-body">
                 <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
               </article>
@@ -86,18 +99,19 @@
             </section>
           </div>
         </div>
-      </section>
+      </div>
 
-        <section class="col-md-4">
+        <div class="col-md-4">
           <img src="photos/prj2-temp.jpg" alt="prj1" class="image-responsive center-block" >
-          <button type="button" class="btn btn-info btn-md center-block" data-toggle="modal" data-target="#prj2Modal" id="btn-modal">Interactive Resume</button>
+          <button type="button" class="btn btn-info btn-md center-block" data-toggle="modal" data-target="#prj2Modal">Interactive Resume</button>
           <div id="prj2Modal" class="modal fade" role="dialog">
             <div class="modal-dialog">
               <section class="modal-content">
-                <header="modal-header">
+                <header class="modal-header">
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
                   <h4 class="modal-title">Project #2: Interactive Resume</h4>
                 </header>
+                <!-- TODO: replace filler content with project outline -->
                 <article class="modal-body">
                   <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
                 </article>
@@ -107,27 +121,26 @@
               </section>
             </div>
           </div>
-        </section>
+        </div>
 
-          <section class="col-md-4" class="center-block">
-            <img src="photos/prj3-temp.jpg" alt="prj1" class="image-responsive center-block" >
-            <button type="button" class="btn btn-info btn-md center-block" data-toggle="modal" data-target="#prj3Modal" id="btn-modal">Arcade Game</button>
-            <div id="prj3Modal" class="modal fade" role="dialog">
+        <div class="col-md-4">
+          <img src="photos/prj3-temp.jpg" alt="prj1" class="image-responsive center-block" >
+          <button type="button" class="btn btn-info btn-md center-block" data-toggle="modal" data-target="#prj3Modal">Arcade Game</button>
+          <div id="prj3Modal" class="modal fade" role="dialog">
             <div class="modal-dialog">
               <section class="modal-content">
                 <header class="modal-header">
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
                   <h4 class="modal-title">Project #3: Arcade Game</h4>
                 </header>
+                <!-- TODO: replace filler content with project outline -->
                 <article class="modal-body">
-
                   <ul>
-                   <li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</li>
-                   <li>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</li>
-                   <li>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</li>
-                   <li>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</li>
-                 </ul>
-
+                    <li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</li>
+                    <li>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</li>
+                    <li>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</li>
+                    <li>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</li>
+                  </ul>
                 </article>
                 <footer class="modal-footer">
                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -135,84 +148,87 @@
               </section>
             </div>
           </div>
-        </section>
-      </section>
+        </div>
+      </div>
 
-      <section class="row">
+      <!-- Primary Row #2 -->
+      <div class="row">
 
-        <section class="col-md-4">
+        <div class="col-md-4">
           <img src="photos/prj4-temp.jpg" alt="prj1" class="image-responsive center-block" >
-          <button type="button" class="btn btn-info btn-md center-block" data-toggle="modal" data-target="#prj4Modal" id="btn-modal">Website Optimization</button>
+          <button type="button" class="btn btn-info btn-md center-block" data-toggle="modal" data-target="#prj4Modal">Website Optimization</button>
           <div id="prj4Modal" class="modal fade" role="dialog">
-          <div class="modal-dialog">
-            <section class="modal-content">
-              <header class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Project #4: Website Optimization Portfolio</h4>
-              </header>
-              <article class="modal-body">
-
-                <dl>
-                 <dt>Definition list</dt>
-                 <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo consequat.</dd>
-                 <dt>Lorem ipsum dolor sit amet</dt>
-                 <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo consequat.</dd>
-                </dl>
-
-              </article>
-              <footer class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </footer>
-            </section>
+            <div class="modal-dialog">
+              <section class="modal-content">
+                <header class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Project #4: Website Optimization Portfolio</h4>
+                </header>
+                <!-- TODO: replace filler content with project outline -->
+                <article class="modal-body">
+                  <dl>
+                    <dt>Definition list</dt>
+                    <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                      commodo consequat.</dd>
+                      <dt>Lorem ipsum dolor sit amet</dt>
+                      <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</dd>
+                  </dl>
+                </article>
+                <footer class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </footer>
+              </section>
+            </div>
           </div>
         </div>
-      </section>
 
-      <section class="col-md-4">
-        <img src="photos/prj5-temp.jpg" alt="prj1" class="image-responsive center-block" >
-        <button type="button" class="btn btn-info btn-md center-block" data-toggle="modal" data-target="#prj5Modal" id="btn-modal">Neighborhood Map</button>
-        <div id="prj5Modal" class="modal fade" role="dialog">
-          <div class="modal-dialog">
-            <section class="modal-content">
-              <header class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Project #5: Neighborhood Map</h4>
-              </header>
-              <article class="modal-body">
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-              </article>
-              <footer class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </footer>
-            </section>
+        <div class="col-md-4">
+          <img src="photos/prj5-temp.jpg" alt="prj1" class="image-responsive center-block" >
+          <button type="button" class="btn btn-info btn-md center-block" data-toggle="modal" data-target="#prj5Modal">Neighborhood Map</button>
+          <div id="prj5Modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <section class="modal-content">
+                <header class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Project #5: Neighborhood Map</h4>
+                </header>
+                <!-- TODO: replace filler content with project outline -->
+                <article class="modal-body">
+                  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                </article>
+                <footer class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </footer>
+              </section>
+            </div>
           </div>
         </div>
-      </section>
 
-      <section class="col-md-4">
-        <img src="photos/prj1-temp.jpg" alt="prj1" class="image-responsive center-block" >
-        <button type="button" class="btn btn-info btn-md center-block" data-toggle="modal" data-target="#prj6Modal" id="btn-modal">RSS Testing</button>
-        <div id="prj6Modal" class="modal fade" role="dialog">
-          <div class="modal-dialog">
-            <section class="modal-content">
-              <header class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Project #6: RSS Testing</h4>
-              </header>
-              <article class="modal-body">
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-              </article>
-              <footer class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </footer>
-            </section>
+        <div class="col-md-4">
+          <img src="photos/prj1-temp.jpg" alt="prj1" class="image-responsive center-block" >
+          <button type="button" class="btn btn-info btn-md center-block" data-toggle="modal" data-target="#prj6Modal">RSS Testing</button>
+          <div id="prj6Modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <section class="modal-content">
+                <header class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Project #6: RSS Testing</h4>
+                </header>
+                <!-- TODO: replace filler content with project outline -->
+                <article class="modal-body">
+                  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                </article>
+                <footer class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </footer>
+              </section>
+            </div>
           </div>
         </div>
-      </section>
-    </section>
+      </div>
+    </main>
   </body>
 </html>
